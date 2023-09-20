@@ -11,8 +11,8 @@ const regularUser = {
     email: "some@gmail.com",
     fullname: {
         userfullname: {
-            firstname: "hitesh",
-            lastname: "choudhary"
+            firstname: "adarsh",
+            lastname: "rangare"
         }
     }
 }
@@ -33,15 +33,15 @@ const obj3 = {...obj1, ...obj2}
 const users = [
     {
         id: 1,
-        email: "h@gmail.com"
+        email: "adarsh@gmail.com"
     },
     {
         id: 1,
-        email: "h@gmail.com"
+        email: "adarsh@gmail.com"
     },
     {
         id: 1,
-        email: "h@gmail.com"
+        email: "adarsh@gmail.com"
     },
 ]
 
@@ -56,9 +56,9 @@ users[1].email
 
 
 const course = {
-    coursename: "js in hindi",
+    coursename: "js course",
     price: "999",
-    courseInstructor: "hitesh"
+    courseInstructor: "adarsh"
 }
 
 // course.courseInstructor
@@ -69,8 +69,8 @@ const {courseInstructor: instructor} = course
 console.log(instructor);
 
 // {
-//     "name": "hitesh",
-//     "coursename": "js in hindi",
+//     "name": "adarsh",
+//     "coursename": "js course",
 //     "price": "free"
 // }
 
