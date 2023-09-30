@@ -20,16 +20,23 @@
     }
     body{
         background-color: #212121;
-        background: url(https://source.unsplash.com/E8Ufcyxz514/2400x1823) center / cover no-repeat fixed;
+        /* background: url(https://source.unsplash.com/E8Ufcyxz514/2400x1823) center / cover no-repeat fixed; */
         font-family: 'Inter',sans-serif;
+        background: url(https://images.pexels.com/photos/396547/pexels-photo-396547.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        
+    }
+    main{
+        position: absolute;
+        
+        transform : translate(calc(50vw - 300px), calc(50vh - 200px));
     }
     .container{
-        /* margin:auto; */
+        
+        background-color: rgba(122, 122, 122, 0.232);
         width: 600px;
         height: 400px;
-        /* background-color: rgba(255, 255, 255, 0); */
-        backdrop-filter:blur(5px);
-        border: 1px solid white;
+        backdrop-filter: blur(5px);
+        border: 1px solid rgb(255, 255, 255);
         padding: 20px;
         display: flex;
         flex-direction: column;
@@ -41,12 +48,9 @@
         padding-bottom: 4rem;
         transition: .5s ease-in;
         cursor: pointer;
-        transform-style: preserve-3d;
     }
 
-    .container:hover{
-        transform: translate(calc(50vw - 300px), calc(50vh - 200px));  
-    }
+    
 
 
     
@@ -96,10 +100,8 @@
 
 </style>
 <body>
+    <main>
     <div class="container">
-        
-            
-               
             </p>
 
         <div class="image">
@@ -116,6 +118,19 @@
 
 
     </div>
+</main>
 </body>
 <script src="index.js"></script>
+<script src="vanilla-tilt.js"></script>
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelector(".container"), {
+		max: 25,
+		speed: 400,
+        glare: true, 
+                     
+	});
+	
+	//It also supports NodeList
+	VanillaTilt.init(document.querySelectorAll(".container"));
+</script>
 </html>
