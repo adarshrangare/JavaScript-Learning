@@ -1,5 +1,7 @@
 // Immediately Invoked Function Expressions (IIFE)
 
+// (function)();
+
 
 (function chai(){
     // named IIFE
